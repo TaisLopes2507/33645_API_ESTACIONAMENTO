@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Estacionamento - Painel Completo</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <h1>Painel Estacionamento</h1>
+
+  <section>
+    <h2>Registrar Entrada</h2>
+    <input type="text" id="plateEntry" placeholder="Placa (ex: ABC-1234)" />
+    <input type="text" id="modelEntry" placeholder="Modelo (ex: Fiat Uno)" />
+    <button onclick="registerEntry()">Registrar Entrada</button>
+    <div id="msgEntry"></div>
+  </section>
+
+  <section>
+    <h2>Verificar Veículo Presente</h2>
+    <input type="text" id="plateCheck" placeholder="Placa" />
+    <button onclick="checkVehicle()">Verificar</button>
+    <div id="msgCheck"></div>
+  </section>
+
+  <section>
+    <h2>Registrar Saída</h2>
+    <input type="text" id="plateExit" placeholder="Placa" />
+    <button onclick="registerExit()">Registrar Saída</button>
+    <div id="msgExit"></div>
+  </section>
+
+  <section>
+    <h2>Cancelar Registro</h2>
+    <input type="text" id="plateCancel" placeholder="Placa" />
+    <button onclick="cancelRegistration()">Cancelar Registro</button>
+    <div id="msgCancel"></div>
+  </section>
+
+  <section>
+    <h2>Relatório Diário</h2>
+    <button onclick="getReport()">Ver Relatório</button>
+    <pre id="reportResult"></pre>
+  </section>
+
+  <section>
+    <h2>Vagas Disponíveis</h2>
+    <button onclick="getSlots()">Ver Vagas</button>
+    <div id="slotsResult"></div>
+  </section>
+
+  <section>
+    <h2>Tempo de Permanência</h2>
+    <input type="text" id="plateTime" placeholder="Placa" />
+    <button onclick="getTime()">Ver Tempo</button>
+    <div id="timeResult"></div>
+  </section>
+
+  <section>
+    <h2>Veículos Ativos</h2>
+    <button onclick="getActiveVehicles()">Ver Veículos Ativos</button>
+    <div id="activeVehicles"></div>
+  </section>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
